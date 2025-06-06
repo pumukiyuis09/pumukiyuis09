@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
 
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("imagenes/gettyimages-587492330.avif
+");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="https://pumukiyuis09.github.io/pumukiyuis09" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+    </div>
+    <div class="w3-col s3">
+    </div>
+    <div class="w3-col s3">
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag"</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Las<br>Cruzadas</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white"></span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">VIDA EN LA EDAD MEDIA</span></h5>
+    <p>La vida en la Edad Media, que abarcó aproximadamente desde el siglo V hasta el XV, estaba marcada por una sociedad jerárquica, basada en el feudalismo. La mayoría de la población eran campesinos que trabajaban la tierra bajo el control de los señores feudales, mientras que la nobleza y el clero ostentaban el poder y la influencia.</p>
+    <p>Las ciudades comenzaron a florecer hacia el final del período, con el auge del comercio y los gremios de artesanos. La Iglesia tenía un papel central, no solo en la espiritualidad, sino también en la política y la educación. La medicina y la ciencia estaban limitadas por las creencias religiosas, aunque hubo avances en arquitectura con la construcción de imponentes catedrales góticas.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Debemos a la Edad Media los dos peores inventos de la humanidad: el amor romántico y la pólvora.</i></p>
+      <p>André Maurois</p>
+    </div>
+    <img src="imagenes/isabel_y_fernando.jpg
+" style="width:100%;max-width:1000px" class="w3-margin-top">
+        <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">SISTEMA FEUDAL</span></h5>
+    <p>La economía medieval se basaba principalmente en la agricultura y el trueque. La tierra era la principal fuente de riqueza, y los campesinos trabajaban en los feudos de los señores a cambio de protección. El comercio sufrió un declive tras la caída del Imperio Romano, pero comenzó a recuperarse en los últimos siglos de la Edad Media con el auge de las ciudades y los gremios de artesanos</p>
+    <p>El poder estaba descentralizado y dominado por el sistema feudal, donde los reyes otorgaban tierras a los nobles a cambio de lealtad y servicio militar. La Iglesia Católica tenía una gran influencia política y actuaba como mediadora en conflictos entre monarcas. Con el tiempo, los reinos comenzaron a consolidarse, dando paso a monarquías más centralizadas</p>
+     <p>La sociedad medieval estaba dividida en tres estamentos: la nobleza, el clero y los campesinos. La movilidad social era casi inexistente, ya que la posición de cada persona estaba determinada por su nacimiento. La Iglesia desempeñaba un papel crucial en la vida cotidiana, regulando la educación, la moral y las costumbres.</p>
+
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONCLUSIÓN</span></h5>
+    <p>En conclusión la Edad Media fue un período de transformación en Europa entre los siglos V y XV, marcado por la sociedad feudal, la influencia de la Iglesia y avances culturales. Aunque tuvo momentos de crisis, sentó las bases del Renacimiento y la modernidad.</p>
+    <img src="imagenes/castilla_y_leon_512961593_202965980_1706x960.webp
+" class="w3-image" style="width:100%">
+   
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p><a href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_cafe" title="W3.CSS" target="_blank" class="w3-hover-text-green">Plantilla usada</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
