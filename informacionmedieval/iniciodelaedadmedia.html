@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
 
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("imagenes/unnamed-1.webp
+");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="https://pumukiyuis09.github.io/pumukiyuis09" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+    </div>
+    <div class="w3-col s3">
+    </div>
+    <div class="w3-col s3">
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag"</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">El<br>Inico</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white"></span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">EL INICIO DE LA EDAD MEDIA</span></h5>
+    <p>La Edad Media es el período histórico que se extiende aproximadamente desde el año 476 d.C., con la caída del Imperio Romano de Occidente, hasta 1492, con el descubrimiento de América, o 1453, con la toma de Constantinopla por los otomanos. Durante esta etapa, Europa experimentó profundos cambios políticos, sociales y culturales, pasando de la fragmentación feudal a la consolidación de monarquías y el resurgimiento del comercio y las ciudades.</p>
+    <p>Inicialmente, la sociedad medieval estuvo dominada por el feudalismo, un sistema basado en relaciones de vasallaje y el control de la tierra por parte de nobles y señores feudales. La Iglesia Católica tuvo un papel fundamental, influyendo en la vida cotidiana, la educación y la política. La cultura y el conocimiento estuvieron en gran parte preservados por los monasterios, que se convirtieron en centros de estudio y conservación de textos clásicos.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Con la caída de Roma, Europa se fragmenta y el feudalismo comienza a definir la nueva era."</i></p>
+      <p>Desconocido</p>
+    </div>
+    <img src="imagenes/Acre-2.jpg
+" style="width:100%;max-width:1000px" class="w3-margin-top">
+        <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">CARACTERISTICAS PRINCIPALES</span></h5>
+    <p>La Edad Media se caracterizó por el feudalismo, un sistema social y económico basado en la propiedad de la tierra. Los reyes otorgaban tierras a los nobles, quienes a su vez protegían a los campesinos que trabajaban en ellas. Esta estructura jerárquica definió la vida medieval, con relaciones de vasallaje y una economía agraria que sustentaba a la sociedad.</p>
+    <p>Otro aspecto fundamental fue el predominio de la Iglesia Católica, que ejerció una enorme influencia en la política y la cultura. Los monasterios se convirtieron en centros de conocimiento donde se preservaron textos clásicos y se impulsó la educación. La religión marcó el ritmo de la vida cotidiana, y la autoridad papal rivalizó incluso con la de los monarcas.</p>
+     <p>Hacia el final de la Edad Media, el comercio y las ciudades comenzaron a expandirse, dando lugar al crecimiento de la burguesía y al desarrollo de rutas comerciales. Las ferias y mercados cobraron importancia, lo que permitió la aparición de un sistema económico más dinámico. Estos cambios prepararon el camino para el Renacimiento, que marcó el fin del período medieval.</p>
+
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONCLUSIÓN</span></h5>
+    <p>En conclusión, el inicio de la Edad Media representó una profunda transformación en Europa tras la caída del Imperio Romano de Occidente en 476 d.C.. La fragmentación política dio paso al feudalismo, un sistema basado en la tierra y el vasallaje que definió la estructura social y económica de la época. Al mismo tiempo, la Iglesia Católica se consolidó como la institución más influyente, ejerciendo un gran poder tanto espiritual como político.</p>
+    <img src="imagenes/image-10.png
+" class="w3-image" style="width:100%">
+   
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p><a href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_cafe" title="W3.CSS" target="_blank" class="w3-hover-text-green">Plantilla usada</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
